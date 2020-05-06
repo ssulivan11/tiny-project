@@ -1,0 +1,14 @@
+{
+  "name": "tiny-project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "vite --jsx-factory=h"
+  },
+  "dependencies": {
+    "preact": "^10.4.1"
+  },
+  "devDependencies": {
+    "vite": "^0.11.0"
+  }
+}

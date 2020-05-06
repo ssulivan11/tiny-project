@@ -1,0 +1,11 @@
+body,
+html {
+  padding: 20px;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 25px;
+}
