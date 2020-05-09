@@ -6,7 +6,6 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 .DS_STORE
-.vscode/
 pids
 *.pid
 *.seed
@@ -29,3 +28,6 @@ typings/
 .yarn-integrity
 .cache
 .vuepress/dist
+
+cypress/screenshots
+cypress/videos

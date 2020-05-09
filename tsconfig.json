@@ -3,6 +3,9 @@
     "baseUrl": "./src",
     "jsx": "react",
     "jsxFactory": "h",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "sourceMap": true,
     "paths": {
       "~*": ["./*"]
     }
