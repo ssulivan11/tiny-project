@@ -3,12 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "vite --jsx-factory=h"
+    "start": "vite --jsx-factory=h",
+    "build": "parcel build *.html"
   },
   "dependencies": {
     "preact": "^10.4.1"
   },
   "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.8.3",
     "vite": "^0.11.0"
   }
 }
