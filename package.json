@@ -7,7 +7,8 @@
     "build": "parcel build *.html",
     "cypress": "cypress open",
     "jest": "jest --collect-coverage",
-    "test": "yarn start-test 'yarn start' 3000 'cypress run'"
+    "test": "yarn start-test 'yarn start' 3000 'cypress run'",
+    "format": "prettier --write ."
   },
   "husky": {
     "hooks": {
@@ -16,7 +17,8 @@
     }
   },
   "dependencies": {
-    "preact": "^10.4.1"
+    "preact": "^10.4.1",
+    "preact-router": "^3.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

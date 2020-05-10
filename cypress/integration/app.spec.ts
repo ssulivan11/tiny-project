@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-context("App", () => {
+context("App Interaction", () => {
   before(() => {
     cy.visit("http://localhost:3000");
   });
@@ -18,6 +18,24 @@ context("App", () => {
   });
 
   it("should have the correct heading", () => {
-    cy.get("h1").should("contain", "Welcome to tiny project!");
+    cy.get("h1").should("contain", "Welcome to Tiny Project!");
+  });
+
+  it("should route to about page", () => {
+    cy.get("nav a:nth-child(2)").click();
+    cy.url().should("eq", "http://localhost:3000/about");
+    cy.get("h1").should("contain", "About the Tiny Project");
+  });
+
+  it("should route to home page", () => {
+    cy.get("nav a:nth-child(1)").click();
+    cy.url().should("eq", "http://localhost:3000/");
+    cy.get("h1").should("contain", "Welcome to Tiny Project!");
+  });
+
+  it("should go back to about page", () => {
+    cy.go("back");
+    cy.url().should("eq", "http://localhost:3000/about");
+    cy.get("h1").should("contain", "About the Tiny Project");
   });
 });

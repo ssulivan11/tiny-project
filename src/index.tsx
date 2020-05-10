@@ -1,5 +1,5 @@
 import { h, render } from "preact";
 // @ts-ignore
-import { App } from "./components/app.tsx";
+import { App } from "./containers/App.tsx";
 
-render(<App name={"tiny project"} />, document.getElementById("app"));
+render(<App />, document.getElementById("app"));
