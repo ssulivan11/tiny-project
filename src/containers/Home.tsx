@@ -11,8 +11,8 @@ export const Home: FunctionalComponent<Props> = ({ title }: Props) => (
   <div className="text-center">
     <img
       style={imgStyle}
-      src="src/assets/android-chrome-512x512.png"
-      alt="Smiley face"
+      src="static/android-chrome-512x512.png"
+      alt="Tiny project logo, emoji mouse"
       height="200"
       width="200"
     />

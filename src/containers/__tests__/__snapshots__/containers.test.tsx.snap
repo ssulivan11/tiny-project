@@ -102,9 +102,9 @@ exports[`App Interaction 1`] = `
             className="text-center"
           >
             <img
-              alt="Smiley face"
+              alt="Tiny project logo, emoji mouse"
               height="200"
-              src="src/assets/android-chrome-512x512.png"
+              src="static/android-chrome-512x512.png"
               style={
                 Object {
                   "display": "block",
@@ -190,9 +190,9 @@ exports[`Home tests 1`] = `
   className="text-center"
 >
   <img
-    alt="Smiley face"
+    alt="Tiny project logo, emoji mouse"
     height="200"
-    src="src/assets/android-chrome-512x512.png"
+    src="static/android-chrome-512x512.png"
     style={
       Object {
         "display": "block",
