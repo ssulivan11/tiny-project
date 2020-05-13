@@ -15,7 +15,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "yarn jest && pretty-quick --staged",
-      "pre-push": "yarn lighthouse && yarn cypress:run"
+      "pre-push": "yarn bundlesize && yarn cypress:run"
     }
   },
   "dependencies": {
