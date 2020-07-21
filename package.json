@@ -7,15 +7,15 @@
     "build": "parcel build index.html",
     "jest": "jest --collect-coverage",
     "cypress": "cypress open",
-    "cypress:run": "yarn start-test 'start' 3000 'cypress run'",
-    "bundlesize": "yarn build && bundlesize -f 'dist/src.*.js' -s 7.8kB",
-    "lighthouse": "yarn start-test 'start' 3000 'lighthouse http://localhost:3000 --view --output-path=./coverage/lighthouse.json'",
+    "cypress:run": "npm run start-test 'start' 3000 'cypress run'",
+    "bundlesize": "npm run build && bundlesize -f 'dist/src.*.js' -s 7.8kB",
+    "lighthouse": "npm run start-test 'start' 3000 'lighthouse http://localhost:3000 --view --output-path=./coverage/lighthouse.json'",
     "format": "prettier --write ."
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn jest && pretty-quick --staged",
-      "pre-push": "yarn bundlesize && yarn cypress:run"
+      "pre-commit": "npm run jest && pretty-quick --staged",
+      "pre-push": "npm run bundlesize && npm run cypress:run"
     }
   },
   "dependencies": {
@@ -29,7 +29,7 @@
     "@types/jest": "^25.2.1",
     "babel-jest": "^26.0.1",
     "bundlesize": "^0.18.0",
-    "cypress": "^4.5.0",
+    "cypress": "^4.11.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-preact-pure": "^2.2.0",
     "enzyme-to-json": "^3.4.4",
