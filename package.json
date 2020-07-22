@@ -7,9 +7,9 @@
     "build": "parcel build index.html",
     "jest": "jest --collect-coverage",
     "cypress": "cypress open",
-    "cypress:run": "npm run start-test 'start' 3000 'cypress run'",
+    "cypress:run": "npm run start-server-and-test start http://localhost:3000 cypress run",
     "bundlesize": "npm run build && bundlesize -f 'dist/src.*.js' -s 7.8kB",
-    "lighthouse": "npm run start-test 'start' 3000 'lighthouse http://localhost:3000 --view --output-path=./coverage/lighthouse.json'",
+    "lighthouse": "npm run start-server-and-test 'start' 3000 'lighthouse http://localhost:3000 --view --output-path=./coverage/lighthouse.json'",
     "format": "prettier --write ."
   },
   "husky": {
